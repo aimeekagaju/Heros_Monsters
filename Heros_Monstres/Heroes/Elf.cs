@@ -19,14 +19,18 @@ namespace Heros_Monsters.Models
 
         public void PutArmor(IArmor armor)
         {
-            
+            if(this is Elf)
+            {
+                armor = new LightArmor();
+                ArmorElf = armor;
+            }
             if (armor is LightArmor)
             {
                 ArmorElf = armor;
-                PutArmor(armor);
             }
             else
             {
+                ArmorElf = armor;
                 Console.WriteLine($"Elf uses only a light armor!");
             };
         }

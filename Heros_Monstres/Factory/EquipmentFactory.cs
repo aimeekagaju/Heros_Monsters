@@ -20,6 +20,8 @@ namespace Heros_Monsters.Factory
                     return new Sword();
                 case "bow":
                     return new Bow();
+                case "hammer":
+                    return new Hammer();
                 default:
                     throw new ArgumentException("Unknown weapon type!");
             }
@@ -34,6 +36,8 @@ namespace Heros_Monsters.Factory
                     return new FlatArmor();
                 case "lightarmor":
                     return new LightArmor();
+                case "heavyarmor":
+                    return new HeavyArmor();
                 default:
                     throw new ArgumentException("Unknown armor type!");
             }

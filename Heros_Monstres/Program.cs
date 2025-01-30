@@ -22,7 +22,7 @@ string weaponChoice = Console.ReadLine();
 IWeapon weapon = EquipmentFactory.CreateWeapon(weaponChoice);
 
 
-Console.WriteLine("Choose your armor (FlatArmor, LightArmor): ");
+Console.WriteLine("Choose your armor (HeavyArmor, FlatArmor, LightArmor): ");
 string armorChoice = Console.ReadLine();
 IArmor armor = EquipmentFactory.CreateArmor(armorChoice);
 
